@@ -848,7 +848,6 @@ img.wp-smiley,
 .site-header .home-link {
 	display: block;
 	margin: 0 auto;
-	max-width: 1080px;
 	padding: 0 20px;
 	text-decoration: none;
 	width: 100%;
@@ -857,11 +856,16 @@ img.wp-smiley,
     background: url(images/GBC-Queensland-header.jpg) no-repeat center center / cover;
 }
 
+.site-title, .site-description {
+	max-width: 1080px;
+    margin: 0 auto;
+    display: block;
+}
+
 .site-title {
 	font-size: 60px;
 	font-weight: bold;
 	line-height: 1;
-	margin: 0;
 
     @media screen and (min-width: 768px) { padding: 58px 0 10px; }
     @media screen and (max-width: 767px) { padding: 28px 0 10px; }
@@ -873,7 +877,6 @@ img.wp-smiley,
 .site-description {
 	font: 400 italic 24px $header-font-stack-secondary;
     text-transform: inherit;
-	margin: 0;
     padding-bottom: 1em;
 }
 
