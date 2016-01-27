@@ -73,7 +73,7 @@ $footer-text:               #686758;
 $footer-link:               #e6402a; // footer widget links
 $copyright-background:      #e8e5ce;
 
-$text-color:                #141412; // normal body text
+$text-color:                #383838; // normal body text
 
 $link-color:                #ca3c08; // normal link state
 $link-highlight:            #ea9629; // link :hover state
@@ -90,9 +90,9 @@ $menu-hover-background:     #db572f; // menubar
 
 $required:                  #ed331c; // comment form
 
-$header-font-stack-main:      Bitter, Georgia, serif;
-$header-font-stack-secondary: "Source Sans Pro", Helvetica, sans-serif;
-$body-font-stack:             "Open Sans", Helvetica, sans-serif;
+$header-font-stack-main:      "Open Sans Condensed", Helvetica, sans-serif;
+$header-font-stack-secondary: Lora, Georgia, serif;
+$body-font-stack:             $header-font-stack-secondary;
 
 /**
  * 1.0 Reset
@@ -153,7 +153,8 @@ textarea {
 
 body {
 	color: $text-color;
-	line-height: 1.5;
+    font-size: 18px;
+	line-height: 1.7;
 	margin: 0;
 }
 
@@ -195,6 +196,7 @@ h6 {
 	clear: both;
 	font-family: $header-font-stack-main;
 	line-height: 1.3;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -881,7 +883,8 @@ img.wp-smiley,
 }
 
 .site-description {
-	font: 300 italic 24px $header-font-stack-secondary;
+	font: 400 italic 24px $header-font-stack-secondary;
+    text-transform: inherit;
 	margin: 0;
 }
 

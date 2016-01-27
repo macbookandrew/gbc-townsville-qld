@@ -9,6 +9,7 @@ function add_custom_css() {
     wp_deregister_style( 'open-sans' );
     wp_register_style( 'open-sans', false ); // dependency workaround from https://gist.github.com/thetrickster/8946567
     wp_dequeue_style( 'bitter' );
+    wp_enqueue_style( 'gbcnq-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Lora:400,400italic,700,700italic' );
 }
 add_action( 'wp_print_styles', 'add_custom_css' );
 
