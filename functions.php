@@ -21,3 +21,9 @@ add_filter( 'script_loader_src', 'script_loader_src_example' );
 add_filter( 'style_loader_src', 'script_loader_src_example' );
 
 include('functions-branding.php');
+
+// tweak search form placeholder
+function tweak_search_form_placeholder( $content ) {
+    return str_replace( 'Search &hellip;', 'Search&hellip;', $content );
+}
+add_filter( 'get_search_form', 'tweak_search_form_placeholder' );
