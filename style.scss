@@ -986,6 +986,7 @@ ul.nav-menu .focus > ul,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
 	color: $secondary-links;
+    font-weight: 700;
 }
 
 .menu-toggle {
