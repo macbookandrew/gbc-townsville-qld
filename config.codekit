@@ -47,6 +47,83 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/dotted-line-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86,
+		"inputAbbreviatedPath": "\/images\/dotted-line-2x.png",
+		"outputAbbreviatedPath": "\/images\/dotted-line-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/dotted-line-light-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85,
+		"inputAbbreviatedPath": "\/images\/dotted-line-light-2x.png",
+		"outputAbbreviatedPath": "\/images\/dotted-line-light-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/dotted-line-light.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80,
+		"inputAbbreviatedPath": "\/images\/dotted-line-light.png",
+		"outputAbbreviatedPath": "\/images\/dotted-line-light.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/dotted-line.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80,
+		"inputAbbreviatedPath": "\/images\/dotted-line.png",
+		"outputAbbreviatedPath": "\/images\/dotted-line.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/GBC-Queensland-header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57857,
+		"inputAbbreviatedPath": "\/images\/GBC-Queensland-header.jpg",
+		"outputAbbreviatedPath": "\/images\/GBC-Queensland-header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/search-icon-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 829,
+		"inputAbbreviatedPath": "\/images\/search-icon-2x.png",
+		"outputAbbreviatedPath": "\/images\/search-icon-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/search-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 422,
+		"inputAbbreviatedPath": "\/images\/search-icon.png",
+		"outputAbbreviatedPath": "\/images\/search-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -248,7 +325,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/gbctq.wordpress.dev",
+	"externalServerAddress": "http:\/\/gbcnq.wordpress.dev",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
