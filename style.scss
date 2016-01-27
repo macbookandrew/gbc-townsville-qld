@@ -857,10 +857,11 @@ img.wp-smiley,
 
 .site-header {
 	position: relative;
+    background: url(images/GBC-Queensland-header.jpg) no-repeat center center / cover;
+
 }
 
 .site-header .home-link {
-	color: $text-color;
 	display: block;
 	margin: 0 auto;
 	max-width: 1080px;
@@ -868,10 +869,8 @@ img.wp-smiley,
 	padding: 0 20px;
 	text-decoration: none;
 	width: 100%;
-}
-
-.site-header .site-title:hover {
-	text-decoration: underline;
+    color: $menu-background;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 .site-title {
@@ -880,6 +879,9 @@ img.wp-smiley,
 	line-height: 1;
 	margin: 0;
 	padding: 58px 0 10px;
+
+    &:hover { text-decoration: underline; }
+
 }
 
 .site-description {
