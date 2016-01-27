@@ -29,7 +29,7 @@
 
 	// custom admin footer
 	function remove_footer_admin() {
-		echo '&copy; ' . date( 'Y' ) . ' by <a href="http://andrewrminion.com/?utm_source=client-site&utm_content=admin-copyright&utm_campaign=NewChildTheme.com" target="_blank">AndrewRMinion Design</a>.';
+		echo '&copy; ' . date( 'Y' ) . ' by <a href="https://andrewrminion.com/?utm_source=client-site&utm_content=admin-copyright&utm_campaign=GBCNQ.com" target="_blank">AndrewRMinion Design</a>.';
 	}
 	add_filter( 'admin_footer_text', 'remove_footer_admin' );
 
@@ -37,8 +37,8 @@
 	function armd_dashboard_widget_function() {
 		// Entering the text between the quotes
 		echo "<ul>
-		<li>Release Date: May 2015</li>
-		<li>Developer: <a href=\"http://andrewrminion.com/?utm_source=client-site&utm_content=admin-details&utm_campaign=NewChildTheme.com\" target=\"_blank\">AndrewRMinion Design</a></li>
+		<li>Release Date: February 2016</li>
+		<li>Developer: <a href=\"https://andrewrminion.com/?utm_source=client-site&utm_content=admin-details&utm_campaign=GBCNQ.com\" target=\"_blank\">AndrewRMinion Design</a></li>
 		<li>Hosting provider: AndrewRMinion Design</li>
 		</ul>";
 	}
