@@ -902,6 +902,8 @@ img.wp-smiley,
 	max-width: 1080px;
 	min-height: 45px;
 	position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul.nav-menu,
@@ -997,9 +999,7 @@ ul.nav-menu .focus > ul,
 }
 
 .site-header .search-form {
-	position: absolute;
-	right: 20px;
-	top: 1px;
+    align-self: center;
 }
 
 .site-header .search-field {
