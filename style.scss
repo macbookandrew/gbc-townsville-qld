@@ -1307,6 +1307,21 @@ footer.entry-meta {
     cursor: pointer;
 }
 
+.devotionals-calendar {
+    list-style-type: none;
+
+    &.entry-header { padding-top: 2em; }
+
+    li {
+        display: inline-block;
+        padding: .25em 1em;
+        margin: 0 1em 1em 0;
+        background-color: $link-color;
+    }
+
+    a { color: white; }
+}
+
 /**
  * 5.4 Galleries
  * ----------------------------------------------------------------------------

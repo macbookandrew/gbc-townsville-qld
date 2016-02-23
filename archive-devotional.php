@@ -27,6 +27,34 @@ get_header(); ?>
 				<h1 class="archive-title">Devotionals</h1>
 			</header><!-- .archive-header -->
 
+            <?php // calendar of posts
+            $args = array (
+                'post_type'              => array( 'devotional' ),
+                'nopaging'               => true,
+                'posts_per_page'         => '30',
+                'order'                  => 'ASC',
+                'orderby'                => 'date',
+            );
+
+            // The Query
+            $devotionals_calendar = new WP_Query( $args );
+
+            // The Loop
+            if ( $devotionals_calendar->have_posts() ) {
+                echo '<ol class="devotionals-calendar entry-header">';
+                while ( $devotionals_calendar->have_posts() ) {
+                    $devotionals_calendar->the_post();
+                    echo '<li><a href="' . esc_url( get_permalink() ) . '">' . get_post_time( 'M j' ) . '</li>';
+                }
+                echo '</ol>';
+            } else {
+                // no posts found
+            }
+
+            // Restore original Post Data
+            wp_reset_postdata();
+            ?>
+
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
