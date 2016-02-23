@@ -100,17 +100,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/GBC-Queensland-header.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 57857,
-		"inputAbbreviatedPath": "\/images\/GBC-Queensland-header.jpg",
-		"outputAbbreviatedPath": "\/images\/GBC-Queensland-header.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/search-icon-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
