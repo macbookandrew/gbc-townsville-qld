@@ -129,3 +129,27 @@ function twentythirteen_entry_meta() {
 		);
 	}
 }
+
+// add date-based archives for devotionals
+add_filter( 'getarchives_where', 'getarchives_where_filter', 10, 2 );
+add_filter( 'generate_rewrite_rules', 'generate_devotionals_rewrite_rules' );
+
+function getarchives_where_filter( $where, $args ) {
+    if ( isset($args['post_type']) ) {
+        $where = "WHERE post_type = '$args[post_type]' AND post_status = 'publish'";
+    }
+    return $where;
+}
+
+function generate_devotionals_rewrite_rules( $wp_rewrite ) {
+    $devotional_rules = array(
+        'devotional/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$' => 'index.php?post_type=devotional&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]',
+        'devotional/([0-9]{4})/([0-9]{1,2})/?$' => 'index.php?post_type=devotional&year=$matches[1]&monthnum=$matches[2]',
+        'devotional/([0-9]{4})/?$' => 'index.php?post_type=devotional&year=$matches[1]'
+    );
+    $wp_rewrite->rules = $devotional_rules + $wp_rewrite->rules;
+}
+
+function get_archives_devotionals_link( $link ) {
+    return str_replace( get_site_url(), get_site_url() . '/devotional', $link );
+};
