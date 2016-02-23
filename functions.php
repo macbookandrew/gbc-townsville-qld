@@ -27,3 +27,13 @@ function tweak_search_form_placeholder( $content ) {
     return str_replace( 'Search &hellip;', 'Search&hellip;', $content );
 }
 add_filter( 'get_search_form', 'tweak_search_form_placeholder' );
+
+// add doctrinal statement JS
+function add_doctrinal_statement_JS() {
+    wp_register_script( 'doctrinal-statement', get_stylesheet_directory_uri() . '/JS/doctrine.min.js', array( 'jquery' ) );
+
+    if ( get_the_ID() == '8' ) {
+        wp_enqueue_script( 'doctrinal-statement' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'add_doctrinal_statement_JS' );

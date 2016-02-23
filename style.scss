@@ -1295,6 +1295,14 @@ footer.entry-meta {
 	border-radius: 0;
 }
 
+.page-id-8 .entry-content h3 {
+    background-color: $link-color;
+    color: white;
+    padding: 1em;
+    margin: 0;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
 
 /**
  * 5.4 Galleries
