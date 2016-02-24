@@ -153,3 +153,16 @@ function generate_devotionals_rewrite_rules( $wp_rewrite ) {
 function get_archives_devotionals_link( $link ) {
     return str_replace( get_site_url(), get_site_url() . '/devotional', $link );
 };
+
+// add custom header fixes for mobile
+function custom_header_styles() { ?>
+	<style type="text/css">
+        .site-header { background: none !important; }
+		.home-link {
+			background: url(<?php header_image(); ?>) no-repeat scroll top;
+			background-size: cover;
+        }
+	</style>
+	<?php
+}
+add_action( 'wp_head', 'custom_header_styles', 15 );
