@@ -30,8 +30,7 @@ get_header(); ?>
             <?php // calendar of posts
             $args = array (
                 'post_type'              => array( 'devotional' ),
-                'nopaging'               => true,
-                'posts_per_page'         => '30',
+                'posts_per_page'         => '7',
                 'order'                  => 'ASC',
                 'orderby'                => 'date',
             );
@@ -40,13 +39,15 @@ get_header(); ?>
             $devotionals_calendar = new WP_Query( $args );
 
             // The Loop
-            if ( $devotionals_calendar->have_posts() ) {
-                echo '<ol class="devotionals-calendar entry-header">';
+            if ( $devotionals_calendar->have_posts() && ! is_paged() ) {
+                echo '<div class="devotionals-calendar entry-header">
+                    <h2>Last Week</h2>
+                    <ol>';
                 while ( $devotionals_calendar->have_posts() ) {
                     $devotionals_calendar->the_post();
-                    echo '<li><a href="' . esc_url( get_permalink() ) . '">' . get_post_time( 'M j' ) . '</li>';
+                    echo '<li><a href="' . esc_url( get_permalink() ) . '">' . get_post_time( 'M j' ) . '</a></li>';
                 }
-                echo '</ol>';
+                echo '</ol></div>';
             } else {
                 // no posts found
             }
@@ -54,6 +55,8 @@ get_header(); ?>
             // Restore original Post Data
             wp_reset_postdata();
             ?>
+
+			<?php twentythirteen_paging_nav(); ?>
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

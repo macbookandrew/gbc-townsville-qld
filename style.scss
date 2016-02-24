@@ -1307,9 +1307,9 @@ footer.entry-meta {
 }
 
 .devotionals-calendar {
-    list-style-type: none;
-
     &.entry-header { padding-top: 2em; }
+
+    ol { list-style-type: none; }
 
     li {
         display: inline-block;
@@ -1320,6 +1320,24 @@ footer.entry-meta {
 
     a { color: white; }
 }
+
+.devotionals-calendar, .archive-header {
+    + .paging-navigation {
+        padding: 0;
+        background-color: transparent;
+
+        .nav-previous, .nav-next {
+            .meta-nav {
+                padding: 0;
+                font-size: inherit;
+                width: auto;
+                background: none;
+                color: $link-color;
+            }
+        }
+    }
+}
+
 
 /**
  * 5.4 Galleries
