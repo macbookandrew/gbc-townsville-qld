@@ -2623,6 +2623,12 @@ footer.entry-meta {
 	background-color: transparent;
 }
 
+.widget_gce_widget {
+    .simcal-default-calendar-list .simcal-event-details p {
+        margin: 0;
+        font-size: 1em;
+    }
+}
 
 /**
  * 7.0 Footer
