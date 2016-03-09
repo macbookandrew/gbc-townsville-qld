@@ -166,3 +166,10 @@ function custom_header_styles() { ?>
 	<?php
 }
 add_action( 'wp_head', 'custom_header_styles', 15 );
+
+// increase header height
+function yourchildtheme_custom_header_setup() {
+    $args = array( 'height' => 400 );
+    add_theme_support( 'custom-header', $args );
+}
+add_action( 'after_setup_theme', 'yourchildtheme_custom_header_setup' );
