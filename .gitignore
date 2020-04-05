@@ -3,6 +3,3 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
-/style.min.css
-/style.min.css.map
-/JS/doctrine.min.js
