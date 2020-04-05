@@ -42,11 +42,16 @@ get_header(); ?>
 				</h1>
 			</header><!-- .archive-header -->
 
+			<div class="entry-content">
+				<p>If you would like to subscribe to automatically get sermons each week, <a href="http://feeds.feedburner.com/gbcnq/sermons">click here</a>.</p>
+				<p>If you would like to access previous sermons that are not currently published on the site, please email us at: <a href="mailto:info@gbcnq.com">info@gbcnq.com</a></p>
+				<?php echo render_wpfc_sorting(); ?>
+			</div>
+
 			<?php
-            echo render_wpfc_sorting();
 			// Start the loop.
 			while ( have_posts() ) :
-                the_post();
+				the_post();
 				?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
