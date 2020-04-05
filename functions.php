@@ -1,7 +1,7 @@
 <?php
 // use minified CSS and dequeue 2013 default fonts
 function add_custom_css() {
-    wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/style.min.css' );
+    wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/style.min.css', array(), wp_get_theme()->get( 'version' ) );
     wp_dequeue_style( 'twentythirteen-style' );
 
     // fonts
