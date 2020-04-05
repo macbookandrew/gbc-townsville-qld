@@ -23,26 +23,11 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title">
-				<?php
-				if ( is_day() ) {
-					/* translators: %s: Date. */
-					printf( __( 'Daily Archives: %s', 'twentythirteen' ), get_the_date() );
-				} elseif ( is_month() ) {
-					/* translators: %s: Date. */
-					printf( __( 'Monthly Archives: %s', 'twentythirteen' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'twentythirteen' ) ) );
-				} elseif ( is_year() ) {
-					/* translators: %s: Date. */
-					printf( __( 'Yearly Archives: %s', 'twentythirteen' ), get_the_date( _x( 'Y', 'yearly archives date format', 'twentythirteen' ) ) );
-				} else {
-					_e( 'Archives', 'twentythirteen' );
-				}
-				?>
-				</h1>
-			</header><!-- .archive-header -->
+			<header class="entry-header">
+				<h1 class="entry-title">Sermons</h1>
+			</header><!-- .entry-header -->
 
-			<div class="entry-content">
+			<div class="entry-content introduction">
 				<p>If you would like to subscribe to automatically get sermons each week, <a href="http://feeds.feedburner.com/gbcnq/sermons">click here</a>.</p>
 				<p>If you would like to access previous sermons that are not currently published on the site, please email us at: <a href="mailto:info@gbcnq.com">info@gbcnq.com</a></p>
 				<?php echo render_wpfc_sorting(); ?>

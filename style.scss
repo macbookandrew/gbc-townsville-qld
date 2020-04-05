@@ -2523,11 +2523,15 @@ footer.entry-meta {
 
  .post-type-archive-wpfc_sermon {
 
-	.entry-header {
+	.site-content > .entry-header {
+		margin-top: 20px;
+	}
+
+	.wpfc_sermon .entry-header {
 		display: none;
 	}
 
-	// The sermon manager plugin inserts another article element.
+	// The sermon manager plugin inserts an extra article element.
 	.entry-content article {
 		padding: 0;
 		margin: 0;
