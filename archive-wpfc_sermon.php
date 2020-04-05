@@ -22,8 +22,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
-        <?php echo render_wpfc_sorting(); ?>
-
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
 				<h1 class="archive-title">
@@ -45,10 +43,10 @@ get_header(); ?>
 			</header><!-- .archive-header -->
 
 			<?php
+            echo render_wpfc_sorting();
 			// Start the loop.
 			while ( have_posts() ) :
                 the_post();
-                wpfc_sermon_excerpt_v2(); // You can edit the content of this function in `partials/content-sermon-archive.php`.
 				?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
