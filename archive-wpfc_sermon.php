@@ -41,7 +41,11 @@ get_header(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
 
-			<?php twentythirteen_paging_nav(); ?>
+			<?php
+			echo '<div class="sm-pagination ast-pagination">';
+			sm_pagination();
+			echo '</div>';
+			?>
 
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
